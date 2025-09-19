@@ -11,7 +11,8 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/nextjs";
-import { dark } from '@clerk/themes'
+import { dark } from "@clerk/themes";
+import { Nav } from "@/modules/site/ui/components/nav";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -30,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider
-    appearance={{
+      appearance={{
         baseTheme: dark,
       }}
     >
@@ -42,7 +43,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <div className=" w-full h-screen relative">
+              <Nav/>
+              <div className=" absolute -z-1 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)] opacity-85"></div>
+              {children}
+            </div>
           </ThemeProvider>
         </body>
       </html>
