@@ -1,23 +1,23 @@
 import { ModeToggle } from "@/components/global/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { PricingTable } from "@/modules/site/ui/components/pricing-table";
-import {  SignOutButton, UserButton } from "@clerk/nextjs";
+import { SignOutButton, UserButton } from "@clerk/nextjs";
 import { LucideWebhook, Rocket } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <main className="h-screen w-full pt-24 md:pt-32 relative flex flex-col px-5 space-y-5">
-        <div className="py-6 space-y-6 max-w-screen-xl mx-auto flex flex-col items-center">
+      <main className="h-screen w-full pt-13 md:pt-19 relative flex flex-col px-5 space-y-5">
+        <div className="py-6 space-y-8 max-w-screen-xl mx-auto flex flex-col items-center">
           {/* Top Section */}
-          <aside className="max-w-screen-2xl mx-auto flex flex-col justify-center items-center space-y-5">
+          <aside className="max-w-screen-2xl mx-auto flex flex-col justify-center items-center space-y-6">
             {/* Action Button */}
             <div className="mb-3 max-w-sm mx-auto border px-5 py-2  rounded-4xl border-chart-2/30 bg-chart-2/5 backdrop-blur-xl animate-pulse hover:brightness-110 cursor-pointer hover:bg-chart-2/30 transition-all duration-200">
               <p className="text-xs tracking-widest flex items-center gap-x-2">
                 <LucideWebhook className="w-4 h-4 animate-spin" />
                 Build a web agency
-                 <LucideWebhook className="w-4 h-4 animate-spin" />
+                <LucideWebhook className="w-4 h-4 animate-spin" />
               </p>
             </div>
 

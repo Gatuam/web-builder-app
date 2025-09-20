@@ -35,7 +35,7 @@ export const Nav = () => {
         </SignedIn>
         <SignedOut>
           <ClerkLoaded>
-            <Button className=" h-8" asChild>
+            <Button className=" h-8 bg-chart-2 hover:bg-chart-2/60" asChild>
               <SignInButton />
             </Button>
           </ClerkLoaded>

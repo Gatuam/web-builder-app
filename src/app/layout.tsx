@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/global/theme-provider";
 import { Poppins } from "next/font/google";
-import { Nav } from "@/modules/site/ui/components/nav";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],

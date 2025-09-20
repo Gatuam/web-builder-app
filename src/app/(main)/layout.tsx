@@ -11,7 +11,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       }}
     >
       <Nav />
-      <div className=" w-full h-screen flex justify-center pt-10 ">
+      <div className=" w-full h-screen flex justify-center pt-26 ">
         {children}
       </div>
     </ClerkProvider>
