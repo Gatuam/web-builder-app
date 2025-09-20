@@ -16,7 +16,7 @@ import React from "react";
 
 export const Nav = () => {
   return (
-    <div className=" w-full h-18 bg-accent/5 backdrop-blur-2xl border-b border-accent-foreground/10 flex justify-between items-center px-10 drop-shadow-2xl shadow-xs">
+    <div className=" w-full h-18 bg-accent/5 backdrop-blur-md border-b border-chart-2/10 flex justify-between items-center px-10 drop-shadow-2xl shadow-xs fixed z-40">
       <Link href={"/"}>
         <div className=" flex items-center justify-cente gap-2.5 ">
           <Image src={"/logo.svg"} alt="logo" width={23} height={40} />
